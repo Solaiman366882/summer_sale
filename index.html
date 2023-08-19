@@ -20,7 +20,9 @@
                         'banner-bg': '#F9F6E2',
                         'btn-bg': '#E527B2',
                         'heading-color': '#111111',
-                        'pera-bg': '#888888',
+                        'pera-color': '#888888',
+                        'hover-bg':'#0FA2EA',
+                        'main-bg':'#F8F8F8'
                     }
                 }
             }
@@ -42,7 +44,7 @@
                 <h1 class="text-heading-color text-5xl font-bold mt-11 mb-14">Purchase TK 200 or <br> above & get <span class="text-btn-bg">20% off</span></h1>
                 <div class="flex items-center gap-4 mx-auto text-center justify-center">
                     <p class="text-heading-color text-2xl">Use Promo Code</p>
-                    <button class="btn bg-btn-bg hover:bg-sky-700 text-white">SELL200</button>
+                    <button class="btn bg-btn-bg hover:bg-hover-bg text-white">SELL200</button>
                 </div>
             </div>
             <div class=" text-center">
@@ -50,13 +52,69 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
-            <div>
-
+    <main class="py-32 bg-main-bg w-full">
+        <section class="max-w-screen-xl mx-auto flex gap-5">
+            <div class="basis-3/4">
+                <h2 class="text-4xl text-heading-color font-semibold mb-7">Kitchenware</h2>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="card bg-base-100 p-6 shadow-xl">
+                        <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                        <div class="text-center mt-5">
+                            <div class="rating rating-md">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          </div>
+                        <div class="card-body text-center mt-2 p-0">
+                          <h2 class="card-title text-center block font-semibold mb-2">K. Accessories</h2>
+                          <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-6 shadow-xl">
+                        <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                        <div class="text-center mt-5">
+                            <div class="rating rating-md">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          </div>
+                        <div class="card-body text-center mt-2 p-0">
+                          <h2 class="card-title text-center block font-semibold mb-2">K. Accessories</h2>
+                          <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-6 shadow-xl">
+                        <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                        <div class="text-center mt-5">
+                            <div class="rating rating-md">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          </div>
+                        <div class="card-body text-center mt-2 p-0">
+                          <h2 class="card-title text-center block font-semibold mb-2">K. Accessories</h2>
+                          <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                
+            <div class="basis-3/12">
+                <!-- coupon Area -->
+                <div class="bg-white w-full rounded-lg p-6 mt-[70px]">
+                    <h3 class="text-2xl font-medium">Have coupon?</h3>
+                    <div class="flex items-center">
+                        <input type="text" placeholder="coupon code" class="border border-pera-color border-r-0 pl-3 rounded-l-lg rounded-bl-lg h-[54px] outline-none"><button class="btn h-14 bg-btn-bg hover:bg-hover-bg text-white rounded-l-none rounded-bl-none">Apply</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
