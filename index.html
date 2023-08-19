@@ -8,26 +8,58 @@
     <!-- Daisy  Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Google Font Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'banner-bg': '#F9F6E2',
+                        'btn-bg': '#E527B2',
+                        'heading-color': '#111111',
+                        'pera-bg': '#888888',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-family{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 
 </head>
 
-<body>
-    <header>
-        <div>
-            <div>
-                <h2> ---SALE FEVER--- </h2>
-                <h1>Purchase TK 200 or <br> above & get <span>20% off</span></h1>
-                <div>
-                    <p>Use Promo Code</p>
-                    <button>SELL200</button>
+<body class="font-family">
+    <header class="w-full bg-banner-bg py-12">
+        <div class="flex gap-7 items-center justify-between max-w-screen-xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-heading-color text-3xl font-medium"> ---SALE FEVER--- </h2>
+                <h1 class="text-heading-color text-5xl font-bold mt-11 mb-14">Purchase TK 200 or <br> above & get <span class="text-btn-bg">20% off</span></h1>
+                <div class="flex items-center gap-4 mx-auto text-center justify-center">
+                    <p class="text-heading-color text-2xl">Use Promo Code</p>
+                    <button class="btn bg-btn-bg hover:bg-sky-700 text-white">SELL200</button>
                 </div>
             </div>
-            <div>
-                <img src="images/Summer 1.png" alt="">
+            <div class=" text-center">
+                <img src="images/Summer 1.png" class="w-full object-cover" alt="">
             </div>
         </div>
     </header>
+    <main>
+        <section>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
