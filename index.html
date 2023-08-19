@@ -57,7 +57,7 @@
             <div class="basis-3/4">
                 <h2 class="text-4xl text-heading-color font-semibold mb-7">Kitchenware</h2>
                 <div class="grid grid-cols-3 gap-6">
-                    <div class="card bg-base-100 p-6 shadow-xl">
+                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('K. Accessories',39.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -73,7 +73,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl">
+                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('K. Accessories',39.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -89,7 +89,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl">
+                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('K. Accessories',39.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -112,28 +112,41 @@
                 <div class="bg-white w-full rounded-lg p-5 mt-[70px]">
                     <h3 class="text-2xl font-medium mb-4">Have coupon?</h3>
                     <div class="flex items-center">
-                        <input type="text" placeholder="coupon code" class="border border-pera-color border-r-0 pl-3 rounded-l-lg rounded-bl-lg h-[54px] outline-none"><button class="btn h-14 bg-btn-bg hover:bg-hover-bg text-white rounded-l-none rounded-bl-none" disabled>Apply</button>
+                        <input type="text" placeholder="coupon code" class="border border-pera-color border-r-0 pl-3 rounded-l-lg rounded-bl-lg h-[54px] outline-none"><button class="btn h-14 bg-btn-bg hover:bg-hover-bg text-white rounded-l-none rounded-bl-none" disabled id="coupon-btn">Apply</button>
                     </div>
                 </div>
                 <div>
                     <div id="product-list" class="p-5 bg-white w-full rounded-lg mt-6 space-y-2">
-                        <div>
-                            <h4 class="text-2xl font-medium text-heading-color"><span>1</span>. Home Cooker</h4>
-                            <h4 class="text-2xl font-medium text-heading-color"><span>2</span>. Home Cooker</h4>
-                            <h4 class="text-2xl font-medium text-heading-color"><span>3</span>. Home Cooker</h4>
+                        <div id="product-entry">
+                            
                         </div>
                         <div class="py-5 border-t border-b ">
-                            <h4 class="text-2xl font-medium text-heading-color">Total Price: <span class="text-pera-color"><span>256.00</span>  TK</span></h4>
-                            <h4 class="text-2xl font-medium text-heading-color">Discount: <span class="text-pera-color"><span>51.40</span>  TK</span></h4>
-                            <h4 class="text-2xl font-medium text-heading-color">Total: <span class="text-pera-color"><span>205.60</span>  TK</span></h4>
+                            <h4 class="text-2xl font-medium text-heading-color">Total Price: <span class="text-pera-color"><span id="total-price">00.00</span>  TK</span></h4>
+                            <h4 class="text-2xl font-medium text-heading-color">Discount: <span class="text-pera-color"><span id="discount-amount">00.00</span>  TK</span></h4>
+                            <h4 class="text-2xl font-medium text-heading-color">Total: <span class="text-pera-color"><span id="total">00.00</span>  TK</span></h4>
                         </div>
-                        <button class="btn bg-btn-bg text-white block w-full mt-10 hover:bg-hover-bg" disabled>Make Purchase</button>
+                        <button class="btn bg-btn-bg text-white block w-full mt-10 hover:bg-hover-bg" disabled id="purchase-btn">Make Purchase</button>
                     </div>
                     
                 </div>
             </div>
         </section>
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
