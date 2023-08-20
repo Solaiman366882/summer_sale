@@ -50,7 +50,7 @@ function productEntry(productName,price){
     h4.classList.add('text-2xl','font-medium' ,'text-heading-color');
     productEntry.appendChild(h4);
     setInnerText('total-price',newPrice);
-    setInnerText('total',totalDisplayPrice);
+    setInnerText('total',totalDisplayPrice.toFixed(2));
 }
 
 document.getElementById('coupon-btn').addEventListener('click',function(){
@@ -61,6 +61,7 @@ document.getElementById('coupon-btn').addEventListener('click',function(){
         const totalDisplay = totalPrice - discountPrice;
         setInnerText('discount-amount',discountPrice.toFixed(2));
         setInnerText('total',totalDisplay.toFixed(2));
+        document.getElementById('discount-input').value = '';
     }else{
         return alert('You Have Entered Wrong Coupon Code');
     }
