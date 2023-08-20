@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
+
 <head>
+    <!-- LIVE WEBSITE: https://64e274b712dded1922ff0669--dreamy-dieffenbachia-e391d9.netlify.app/ -->
+    <!-- CODE LINK: https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-Solaiman366882 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
@@ -37,9 +40,7 @@
 </head>
 
 <body class="font-family">
-    <!-- <input type="hidden" name="discount-name"> -->
     <!-- modal -->
-    <!-- Open the modal using ID.showModal() method -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
     <form method="dialog" class="modal-box  py-20">
         <div class="text-center">
@@ -54,10 +55,8 @@
     </form>
     </dialog>
 
-
-
-    <header class="w-full bg-banner-bg py-12">
-        <div class="flex gap-7 flex-col-reverse md:flex-row items-center justify-between max-w-screen-xl mx-auto px-3">
+    <header class="w-full bg-banner-bg py-5 md:py-0">
+        <div class="flex gap-7 min-h-screen flex-col-reverse md:flex-row items-center justify-between max-w-screen-xl mx-auto px-3">
             <div class="text-center">
                 <h2 class="text-heading-color text-2xl md:text-3xl font-medium"> ---SALE FEVER--- </h2>
                 <h1 class="text-heading-color text-4xl md:text-5xl font-bold mt-11 mb-14">Purchase TK 200 or <br class="hidden lg:block"> above & get <span class="text-btn-bg">20% off</span></h1>
@@ -72,12 +71,12 @@
         </div>
     </header>
     <main class="py-32 bg-main-bg w-full">
-        <section class="max-w-screen-xl mx-auto flex gap-5 flex-col md:flex-row p-4 lg:p-0">
+        <section class="max-w-screen-xl mx-auto flex gap-5 flex-col md:flex-row p-4 lg:p-2">
             <div class="basis-3/4">
                 <!-- Kitchen Were -->
                 <h2 class="text-4xl text-heading-color font-semibold mb-7">Kitchenware</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('K. Spoons',39.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('K. Spoons',39.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -93,7 +92,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>39.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('K. Accessories',25.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('K. Accessories',25.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod2.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -109,7 +108,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>25.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Home Cooker',49.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Home Cooker',49.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod3.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -129,7 +128,7 @@
                 <!-- Sportswear -->
                 <h2 class="text-4xl text-heading-color font-semibold mb-7 mt-10">Sportswear</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Sports Back Cap',49.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Sports Back Cap',49.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod4.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -145,7 +144,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>49.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Full Jersey Set',69.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Full Jersey Set',69.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod5.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -161,7 +160,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>69.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Sports cates',159.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Sports cates',159.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod6.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -180,7 +179,7 @@
                 </div>
                 <h2 class="text-4xl text-heading-color font-semibold mb-7 mt-10">Furniture</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Single Relax Chair',185.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Single Relax Chair',185.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod7.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -196,7 +195,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>185.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Children play',299.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Children play',299.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod8.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -212,7 +211,7 @@
                           <p class="text-xl text-pera-color font-normal"><span>299.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 p-6 shadow-xl" onclick="productEntry('Flexible Sofa',339.00)">
+                    <div class="card bg-base-100 p-3 lg:p4 xl:p-6 shadow-xl" onclick="productEntry('Flexible Sofa',339.00)">
                         <figure class="bg-main-bg rounded-md py-8"><img src="./images/prod9.png" alt="Shoes" /></figure>
                         <div class="text-center mt-5">
                             <div class="rating rating-md">
@@ -244,9 +243,9 @@
                             
                         </div>
                         <div class="py-5 border-t border-b ">
-                            <h4 class="text-2xl font-medium text-heading-color">Total Price: <span class="text-pera-color"><span id="total-price">00.00</span>  TK</span></h4>
-                            <h4 class="text-2xl font-medium text-heading-color">Discount: <span class="text-pera-color"><span id="discount-amount">00.00</span>  TK</span></h4>
-                            <h4 class="text-2xl font-medium text-heading-color">Total: <span class="text-pera-color"><span id="total">00.00</span>  TK</span></h4>
+                            <h4 class="text-xl md:text-2xl font-medium text-heading-color">Total Price: <span class="text-pera-color"><span id="total-price">00.00</span>  TK</span></h4>
+                            <h4 class="text-xl md:text-2xl font-medium text-heading-color">Discount: <span class="text-pera-color"><span id="discount-amount">00.00</span>  TK</span></h4>
+                            <h4 class="text-xl md:text-2xl font-medium text-heading-color">Total: <span class="text-pera-color"><span id="total">00.00</span>  TK</span></h4>
                         </div>
                         <button class="btn bg-btn-bg text-white block w-full mt-10 hover:bg-hover-bg" disabled id="purchase-btn" onclick="my_modal_5.showModal()">Make Purchase</button>
                     </div>
