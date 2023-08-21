@@ -73,4 +73,6 @@ document.getElementById('home-btn').addEventListener('click',function(){
     setInnerText('discount-amount','00.00');
     setInnerText('total','00.00');
     document.getElementById('product-entry').innerHTML = '';
+    document.getElementById('purchase-btn').setAttribute('disabled','disabled');
+    discountPrice = 0;
 });
