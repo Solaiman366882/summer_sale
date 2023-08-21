@@ -45,7 +45,7 @@ function productEntry(productName,price){
     }
 
     h4.innerHTML = `
-        <span>${count}</span>. <span>${productName}<span>
+        <span>${count}</span>. <span>${productName}</span>
     `;
     h4.classList.add('text-2xl','font-medium' ,'text-heading-color');
     productEntry.appendChild(h4);
