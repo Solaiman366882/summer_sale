@@ -27,7 +27,6 @@ let discountPrice = 0;
 function productEntry(productName,price){
     const productEntry = document.getElementById('product-entry');
     const previousTotalPrice = getValue('total-price');
-    const totalDisplay = document.getElementById('total');
     const h4 = document.createElement('h4');
     const count = productEntry.childElementCount  +  1;
     const newPrice = (previousTotalPrice + price).toFixed(2);
